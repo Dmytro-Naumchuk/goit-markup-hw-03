@@ -127,7 +127,8 @@ color: #404bbf;
 /* #region Hero*/
 .hero {
     background-color: #2e2f42;
-    height: 600px;    
+    height: 600px; 
+    padding: 188px 0
 }
 
 .hero-title {
@@ -137,10 +138,8 @@ color: #404bbf;
         letter-spacing: 0.02em;
         text-align: center;
         color: #fff;
-        padding-top: 188px;
        box-sizing: content-box;
-       width: 496px;
-       height: 120px;
+    max-width: 496px;
     margin: 0 auto 58px;
 }
 
@@ -156,6 +155,9 @@ color: #404bbf;
         padding: 16px 32px;
         display: block;
         margin: 0 auto;
+        border: none;
+        height: 56px;
+        min-width: 169px;
 }
 .hero-btn:hover, .hero-btn:focus {
 background-color: #404bbf;
@@ -213,18 +215,19 @@ background-color: #404bbf;
 .team-list {
     display: flex;
     gap: 24px;
-
 }
 
 .team-list-item {
     background-color: #fff;
     width: calc((100% - 72px) / 3);
+    border-radius: 0px 0px 4px 4px;
 }
 
-.team-img {
-    margin-bottom: 32px;
-}
+.team-img {}
 
+.team-list-item-container{
+    padding: 32px 0;
+}
 .team-list-title {
     font-weight: 500;
     font-size: 20px;
@@ -244,7 +247,6 @@ background-color: #404bbf;
     color: #434455;
     margin-top: 0px;
     text-align: center;
-    padding-bottom: 32px;
 }
 /* #endregion Team*/
 
@@ -267,19 +269,25 @@ background-color: #404bbf;
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
 
 }
 
 .portfolio-list-item {
-    border: 1px solid #e7e9fc;
-    width: calc((100% - 72px) / 3);
+    width: calc((100% - 48px) / 3);
 }
 
 .portfolio-list-img {
-    margin-bottom: 32px;
     display: block;
     max-width: 100%;
+}
+
+.portfolio-list-item-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+
 }
 
 .portfolio-list-title {
@@ -288,9 +296,7 @@ background-color: #404bbf;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-top: 0px;
     margin-bottom: 8px;
-    padding-left: 16px;
 }
 
 .portfolio-list-text {
@@ -300,8 +306,6 @@ background-color: #404bbf;
     letter-spacing: 0.02em;
     color: #434455;
     margin-top: 0px;
-    padding-bottom: 32px;
-    padding-left: 16px;
 }
 
 .portfolio {}
@@ -311,6 +315,7 @@ background-color: #404bbf;
 .footer { 
     background-color: #2e2f42;
     height: 312px;
+    padding: 100px 0
 }
 
 .footer-logo {
@@ -321,6 +326,8 @@ background-color: #404bbf;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-span {
@@ -333,5 +340,7 @@ background-color: #404bbf;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    margin-top: 0px;
+    max-width: 264px;
 }
 /* #endregion footer*/
